@@ -1,7 +1,8 @@
 import React, { Component } from 'react';
-import './App.css';
+import './assets/css/App.css';
 import { BrowserRouter as Router, Route, Switch } from 'react-router-dom'
 import Home from './components/Home'
+import NoMatch from './components/NoMatch'
 
 class App extends Component {
   render() {
@@ -9,6 +10,7 @@ class App extends Component {
       <Router>
         <Switch>
           <Route exact path="/" component={Home}/>
+          <Route component={NoMatch} />
         </Switch>
       </Router>
     );
