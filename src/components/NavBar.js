@@ -1,12 +1,17 @@
 import React from 'react'
 import '../assets/css/NavBar.css'
 import { NavLink } from 'react-router-dom'
+import { FaSearch } from "react-icons/fa";
 
 const NavBar = props => {
+  const handleClick = () => {
+    console.log('hello')
+  }
   return(
     <div className="navbar">
       <NavLink to="/about">About</NavLink>
       <NavLink to="/">Home</NavLink>
+      <FaSearch color="white" onClick={handleClick} />
     </div>
 
 //     <div class="navbar">
