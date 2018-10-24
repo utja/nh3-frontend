@@ -1,6 +1,6 @@
 import React from 'react'
 import '../assets/css/NavBar.css'
-import { NavLink } from 'react-router-dom'
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 
 const NavBar = props => {
   const handleClick = () => {
@@ -8,8 +8,9 @@ const NavBar = props => {
   }
   return(
     <div className="navbar">
-      <NavLink to="/about">About</NavLink>
-      <NavLink to="/">Home</NavLink>
+      <button onClick={handleClick}>
+        <FontAwesomeIcon icon="search" color="white" size="lg" />
+      </button>
     </div>
   )
 }
