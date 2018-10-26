@@ -1,6 +1,7 @@
 import React from 'react'
 import '../assets/css/NavBar.css'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import Search from './Search';
 
 class NavBar extends React.Component {
   constructor(props){
@@ -10,32 +11,18 @@ class NavBar extends React.Component {
     }
   }
 
-  // componentDidMount() {
-  //   document.body.addEventListener('click', this.handleClickOutside);
-  // }
-
-  // componentWillUnmount() {
-  //   document.body.removeEventListener('click', this.handleClickOutside);
-  // }
-
+  // toggle search bar open/close
   handleClick = () => {
     this.setState({isUserFocusing: !this.state.isUserFocusing})
   }
 
-  // handleClickOutside(event) {
-  //   debugger
-  //   if (!document.body.contains(event.target)) {
-  //     console.log('outside click');
-  //   }
-  // }
-
   render(){
     return(
     <div className="navbar">
-      <button onClick={this.handleClick}>
+      <button onClick={this.handleClick} id="search-button">
         <FontAwesomeIcon icon="search" color="white" size="lg" />
-        {this.state.isUserFocusing ? "SEARCH BAR" : null }
       </button>
+      {this.state.isUserFocusing ? <Search placeholder="Beer, Wine, Food" handleClick={this.handleClick} /> : null }
     </div>
     )
   }
