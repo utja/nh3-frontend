@@ -2,6 +2,7 @@ import React from 'react'
 import '../assets/css/NavBar.css'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import Search from './Search';
+import logo from '../assets/images/logo.png'
 
 class NavBar extends React.Component {
   constructor(props){
@@ -19,6 +20,7 @@ class NavBar extends React.Component {
   render(){
     return(
     <div className="navbar">
+      <img src={logo} alt="logo" style={{height: '30px', width: '30px'}}></img>
       <button onClick={this.handleClick} id="search-button">
         <FontAwesomeIcon icon="search" color="white" size="lg" />
       </button>
