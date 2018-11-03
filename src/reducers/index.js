@@ -1,10 +1,10 @@
 import { combineReducers } from 'redux'
-import restaurantsReducer from './restaurantsReducer'
-import specialsReducer from './specialsReducer'
+import restaurants from './restaurantsReducer'
+import specials from './specialsReducer'
 
 const rootReducer = combineReducers({
-  restaurantsReducer,
-  specialsReducer
+  restaurants,
+  specials
 })
 
 export default rootReducer
