@@ -9,8 +9,6 @@ class TodaysSpecials extends React.Component {
     const mappedSpecials = todaysSpecials.map(special => {
       return <SpecialCard key={special.id} special={special} />
     })
-    console.log(this.props)
-    console.log(todaysSpecials)
     return(
       <div className="todays-specials">
         <h1>Today's Specials</h1>
