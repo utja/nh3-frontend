@@ -2,6 +2,7 @@ import React from 'react'
 import { connect } from 'react-redux'
 import { getTodaysSpecials } from '../../actions/specials'
 import TodaysSpecials from './TodaysSpecials';
+import '../../assets/css/App.css'
 
 class SpecialsContainer extends React.Component {
   componentDidMount(){
