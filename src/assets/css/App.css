@@ -1,4 +1,33 @@
 .app {
-  background-color: deepskyblue;
   margin-top: 5vh;
+  width: 100%;
+  height: 100%;
+}
+
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+  
+  [class$="container"] {
+    display: flex;
+    flex-direction: column;
+  }
+
+} 
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) {
+
+} 
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {   
+  [class$="container"] {
+    display: flex;
+    flex-flow: row wrap;
+  }
+} 
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {
+
 }
